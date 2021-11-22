@@ -15,14 +15,14 @@ RISC-V를 이용해 ReLU, argmax, matmul 함수 구현. main.s를 실행했을 �
  - MNIST Hand-written number   
     Using existing MNIST inputs (mnist_input0~9.bin)
     ```console
-    $java -jar venus.jar main.s -ms 10000000 inputs/mnist/bin/m0.bin inputs/mnist/bin/m1.bin inputs/mnist/bin/inputs/mnist_input0.bin  output.bin
+    $ java -jar venus.jar main.s -ms 10000000 inputs/mnist/bin/m0.bin inputs/mnist/bin/m1.bin inputs/mnist/bin/inputs/mnist_input0.bin  output.bin
     ```
  - Your own hand-written number   
     Save hand-written 28*28 pixels .bmp file in /inputs/mnist/student_inputs/.   
     ```console
-    $cd inputs/mnist/student_inputs/
-    $python bmp_to_bin.py example
-    $cd ../../../
-    $java -jar venus.jar main.s -ms 10000000 -it inputs/mnist/bin/m0.bin inputs/mnist/bin/m1.bin inputs/mnist/student_inputs/example.bin  output.bin
+    $ cd inputs/mnist/student_inputs/
+    $ python bmp_to_bin.py example
+    $ cd ../../../
+    $ java -jar venus.jar main.s -ms 10000000 -it inputs/mnist/bin/m0.bin inputs/mnist/bin/m1.bin inputs/mnist/student_inputs/example.bin  output.bin
     ```
 프로젝트는 UC Berkeley의 CS-61C 수업의 2번째 과제와 동일합니다.
